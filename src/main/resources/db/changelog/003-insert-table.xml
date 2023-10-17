@@ -1,0 +1,62 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+    <changeSet author="author_name" id="transaction_data_migration_1">
+        <insert schemaName="schema" tableName="transaction">
+            <column name="transaction_id" value="1"/>
+            <column name="transaction_player_id" value="1"/>
+            <column name="type" value="deposit"/>
+            <column name="amount" value="100.00"/>
+            <column name="date" value="2021-01-01 10:00:00"/>
+        </insert>
+    </changeSet>
+
+
+    <changeSet author="author_name" id="transaction_data_migration_2">
+        <insert schemaName="schema" tableName="transaction">
+            <column name="transaction_id" value="2"/>
+            <column name="transaction_player_id" value="2"/>
+            <column name="type" value="withdrawal"/>
+            <column name="amount" value="50.00"/>
+            <column name="date" value="2021-02-15 14:30:00"/>
+        </insert>
+    </changeSet>
+
+
+    <changeSet author="author_name" id="transaction_data_migration_3">
+        <insert schemaName="schema" tableName="transaction">
+            <column name="transaction_id" value="3"/>
+            <column name="transaction_player_id" value="1"/>
+            <column name="type" value="deposit"/>
+            <column name="amount" value="200.00"/>
+            <column name="date" value="2021-03-05 09:15:00"/>
+        </insert>
+    </changeSet>
+
+
+    <changeSet  author="author_name" id="transaction_data_migration_4">
+        <insert schemaName="schema" tableName="transaction">
+            <column name="transaction_id" value="4"/>
+            <column name="transaction_player_id" value="3"/>
+            <column name="type" value="withdrawal"/>
+            <column name="amount" value="75.00"/>
+            <column name="date" value="2021-04-20 16:45:00"/>
+        </insert>
+    </changeSet>
+
+
+    <changeSet author="author_name" id="transaction_data_migration_5">
+        <insert schemaName="schema" tableName="transaction">
+            <column name="transaction_id" value="5"/>
+            <column name="transaction_player_id" value="2"/>
+            <column name="type" value="deposit"/>
+            <column name="amount" value="150.00"/>
+            <column name="date" value="2021-05-10 11:30:00"/>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>

@@ -1,0 +1,43 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+    <changeSet id="insert_account_data" author="your_name">
+        <insert schemaName="schema" tableName="account">
+            <column name="account_player_id" value="1"/>
+            <column name="balance" value="100.50"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert_account_data2" author="your_name">
+        <insert schemaName="schema" tableName="account">
+            <column name="account_player_id" value="2"/>
+            <column name="balance" value="250.25"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert_account_data3" author="your_name">
+        <insert schemaName="schema" tableName="account">
+            <column name="account_player_id" value="3"/>
+            <column name="balance" value="50.75"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert_account_data4" author="your_name">
+        <insert schemaName="schema" tableName="account">
+            <column name="account_player_id" value="4"/>
+            <column name="balance" value="500.00"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert_account_data5" author="your_name">
+        <insert schemaName="schema" tableName="account">
+            <column name="account_player_id" value="5"/>
+            <column name="balance" value="75.30"/>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>

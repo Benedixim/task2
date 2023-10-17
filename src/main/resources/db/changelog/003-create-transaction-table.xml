@@ -1,0 +1,26 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+    <changeSet author="author_name" id="transaction_table_migration">
+        <createTable schemaName="schema" tableName="transaction">
+            <column name="transaction_id" type="varchar(255)">
+                    <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="transaction_player_id" type="varchar(255)"/>
+            <column name="type" type="varchar(255)"/>
+            <column name="amount" type="double"/>
+            <column name="date" type="timestamp"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create_sequence" author="your_name">
+        <createSequence schemaName="schema" sequenceName="transaction_sequence" columnName="transaction_id" defaultValueComputed="nextval('transaction.transaction_id')" startValue="1" incrementBy="1"/>
+        <!--        <addDefaultValue schemaName="schema" tableName="player" columnName="player_id" defaultValueComputed="nextval('player_sequence')"/>-->
+
+    </changeSet>
+
+
+</databaseChangeLog>
